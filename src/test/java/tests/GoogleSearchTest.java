@@ -9,11 +9,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pages.GoogleHomePage;
 
+@Epic("GoogleSearch Test")
+@Feature("search the page")
 public class GoogleSearchTest extends BaseTest {
 
-	@Test
+	
+	@Test(description = "Verify Google Search test")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Navigate to Google Search and enter a value")
 	public  void runTc() 
 	{
 		

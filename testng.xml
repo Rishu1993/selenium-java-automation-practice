@@ -2,7 +2,8 @@
 <suite name="AutomationSuite">
   <test name="SeleniumTests">
     <classes>
-      <class name="tests.GoogleSearchTest"/> <!-- update with your package and class name -->
-    </classes>
+      <class name="tests.ProductsTest"/> 
+     
+  </classes>
   </test>
 </suite>

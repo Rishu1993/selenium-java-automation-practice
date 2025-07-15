@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Navigate to Selenium.dev and verify the documentation page title","1601","Verify title of Selenium documentation page","Surefire suite","Tue Jul 15 12:16:34 IST 2025","passed","Tue Jul 15 12:16:36 IST 2025","tests.SeleniumDocsTest","Surefire test","tests.SeleniumDocsTest","runSeleniumDocsTest"
+"Navigate to Google Search and enter a value","4078","Verify Google Search test","Surefire suite","Tue Jul 15 12:16:29 IST 2025","passed","Tue Jul 15 12:16:33 IST 2025","tests.GoogleSearchTest","Surefire test","tests.GoogleSearchTest","runTc"
+"Navigate to automationexercise and login","4723","Verify login Functality","AutomationSuite","Tue Jul 15 12:24:18 IST 2025","passed","Tue Jul 15 12:24:23 IST 2025","tests.Login","SeleniumTests","tests.Login","LoginToSite"
