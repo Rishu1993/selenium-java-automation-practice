@@ -13,9 +13,15 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+    	System.out.println("🔧 BeforeMethod running...");
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+		driver.get("https://automationexercise.com/login");
+	    System.out.println("Driver Initialized: " + driver); // 👈 Add this line
+
+
     }
 
     @AfterMethod

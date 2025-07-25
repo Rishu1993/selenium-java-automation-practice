@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.LoginPage;
+import pages.LoginPagePF;
 import pages.ProductsPage;
 
 public class ProductsTest extends BaseTest {
@@ -16,9 +17,8 @@ public class ProductsTest extends BaseTest {
 	@Test
 	public void  clickProductsTest()
 	{
-		driver.get("https://automationexercise.com/login");
 		
-		LoginPage login=new LoginPage(driver);
+		LoginPagePF login=new LoginPagePF(driver);
 		login.enterEmail("rishua1993@gmail.com");
 		login.enterPassword("Bajajr@01");
 		login.clickLogin();
