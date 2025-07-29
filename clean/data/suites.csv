@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Navigate to automationexercise and login","19540","LoginToSite","AutomationSuite","Tue Jul 29 12:00:02 IST 2025","passed","Tue Jul 29 12:00:22 IST 2025","tests.LoginTest","SeleniumTests","tests.LoginTest","LoginToSite"
+"Navigate to Google Search and enter a value","4078","Verify Google Search test","Surefire suite","Tue Jul 15 12:16:29 IST 2025","passed","Tue Jul 15 12:16:33 IST 2025","tests.GoogleSearchTest","Surefire test","tests.GoogleSearchTest","runTc"
+"","11","LoginToSiteNegative","AutomationSuite","Thu Jul 24 16:57:48 IST 2025","broken","Thu Jul 24 16:57:48 IST 2025","tests.Login","SeleniumTests","tests.Login","LoginToSiteNegative"
+"","1884","LoginToSiteNegative","AutomationSuite","Tue Jul 29 11:59:56 IST 2025","failed","Tue Jul 29 11:59:57 IST 2025","tests.LoginTest","SeleniumTests","tests.LoginTest","LoginToSiteNegative"
+"Navigate to url add product verify and checkout","161367","Navigate to url add product verify and checkout","AutomationSuite","Tue Jul 29 12:03:23 IST 2025","passed","Tue Jul 29 12:06:04 IST 2025","tests.ProductsTest","SeleniumTests","tests.ProductsTest","clickProductsTest"
+"Navigate to Selenium.dev and verify the documentation page title","1601","Verify title of Selenium documentation page","Surefire suite","Tue Jul 15 12:16:34 IST 2025","passed","Tue Jul 15 12:16:36 IST 2025","tests.SeleniumDocsTest","Surefire test","tests.SeleniumDocsTest","runSeleniumDocsTest"
+"Navigate to automationexercise and login","105","Verify login Functality","AutomationSuite","Thu Jul 24 18:12:23 IST 2025","broken","Thu Jul 24 18:12:23 IST 2025","tests.Login","SeleniumTests","tests.Login","LoginToSite"
