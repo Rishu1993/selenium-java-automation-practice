@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T12:22:49 IST" name="Default suite" finished-at="2025-07-29T12:23:21 IST" duration-ms="31567">
+  <suite started-at="2025-07-29T13:15:04 IST" name="Default suite" finished-at="2025-07-29T13:15:25 IST" duration-ms="21342">
     <groups>
     </groups>
-    <test started-at="2025-07-29T12:22:49 IST" name="Default test" finished-at="2025-07-29T12:23:21 IST" duration-ms="31567">
+    <test started-at="2025-07-29T13:15:04 IST" name="Default test" finished-at="2025-07-29T13:15:25 IST" duration-ms="21342">
       <class name="tests.ProductsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T12:22:49 IST" name="setUp" finished-at="2025-07-29T12:22:55 IST" duration-ms="6176" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T13:15:04 IST" name="setUp" finished-at="2025-07-29T13:15:11 IST" duration-ms="6833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickProductsTest()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T12:22:55 IST" name="clickProductsTest" description="Navigate to url add product verify and checkout" finished-at="2025-07-29T12:23:20 IST" duration-ms="24999" status="PASS">
+        <test-method signature="clickProductsTest()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T13:15:11 IST" name="clickProductsTest" description="Navigate to url add product verify and checkout" finished-at="2025-07-29T13:15:25 IST" duration-ms="13962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickProductsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T12:23:20 IST" name="tearDown" finished-at="2025-07-29T12:23:21 IST" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T13:15:25 IST" name="tearDown" finished-at="2025-07-29T13:15:25 IST" duration-ms="387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

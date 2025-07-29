@@ -14,13 +14,15 @@ import io.qameta.allure.Step;
 public class ProductsPage {
 	
 WebDriver driver;
+WebDriverWait wait;
 	
 	public ProductsPage(WebDriver driver)
 	{
 		this.driver=driver;
+		this.wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	}
 	
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	
 
 	public By productsLink=By.xpath("//a[text()=' Products']");
 	
@@ -30,8 +32,7 @@ WebDriver driver;
 	
 	public void clickProductLink()
 	{
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(productsLink));
-
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(productsLink));
 		driver.findElement(productsLink).click();
 	}
 
@@ -46,14 +47,16 @@ WebDriver driver;
 	public void addCart(String productName)
 	{
 	     String dynamicXPath = "//p[text()='" + productName + "']/parent::div[@class='productinfo text-center']//a";
-
-		driver.findElement(By.xpath(dynamicXPath)).click();
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(dynamicXPath)));
+	 
+driver.findElement(By.xpath(dynamicXPath)).click();
 		
 	}
 	@Step("verify the message")
 
 	public boolean verificationMsg()
 	{
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(verifcation));
 		boolean isDisplayed=driver.findElement(verifcation).isDisplayed();
 		return isDisplayed;
 		
@@ -63,8 +66,7 @@ WebDriver driver;
 
 	public void clickOnViewCart()
 	{
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(viewCart));
-
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(viewCart));
 		driver.findElement(viewCart).click();
 	}
 

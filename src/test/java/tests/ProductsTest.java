@@ -2,6 +2,7 @@ package tests;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ import pages.CheckoutPage;
 import pages.LoginPage;
 import pages.LoginPagePF;
 import pages.ProductsPage;
+import utils.ConfigReader;
 
 @Epic("Add Product to cart and Checkout")
 @Feature("Add Product to cart and Checkout")
@@ -34,16 +36,20 @@ public class ProductsTest extends BaseTest {
 	{
 		
 		LoginPagePF login=new LoginPagePF(driver);
-		login.enterEmail("rishua1993@gmail.com");
-		login.enterPassword("Bajajr@01");
+		Logger logger = Logger.getLogger(ProductsTest.class.getName());
+		String email = ConfigReader.get("userEmail");
+		String password = ConfigReader.get("userPassword");
+
+
+		login.enterEmail(email);
+		login.enterPassword(password);
 		login.clickLogin();
 		String product="Stylish Dress";
+		
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 
 		ProductsPage prod=new ProductsPage(driver);
-	//	CartPage cart=new CartPage(driver);
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(prod.productsLink));
 		prod.clickProductLink();
 		
 		
@@ -51,7 +57,6 @@ public class ProductsTest extends BaseTest {
 		wait.until(ExpectedConditions.titleIs("Automation Exercise - All Products"));
 		
 		Assert.assertEquals(driver.getTitle(), "Automation Exercise - All Products", "Title not same");
-		Thread.sleep(10000);
 
 		List<WebElement> lists=prod.allProds();
 		
@@ -60,18 +65,20 @@ public class ProductsTest extends BaseTest {
 
 			if(e.getText().equals(product))
 			{
-				Thread.sleep(3000);
+
 				prod.addCart(product);
-				System.out.println("Added to cart");
-				Thread.sleep(3000);
+				logger.info(product + " is Added to cart");
 		    	boolean isDisplayed=	prod.verificationMsg();
 				Assert.assertTrue(isDisplayed);
 			}
 		}
 		
 		prod.clickOnViewCart();
+		
 		//Verify Cart 
+		
 		CartPage cart=new CartPage(driver);
+		
 		//cart.clickOncart();
 		
 		String theActualProd=cart.verifyCartProduct();

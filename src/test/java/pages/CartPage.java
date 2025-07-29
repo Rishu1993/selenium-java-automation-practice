@@ -27,7 +27,6 @@ public class CartPage {
 	@Step("Get product name from cart for verification")
 	public String verifyCartProduct()
 	{
-		//String mypath="//a[text()='"+product+"']";
 	String prodInCart=	driver.findElement(prodinPage).getText();
 	return prodInCart;
 		

@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.ConfigReader;
 
 
 public class BaseTest {
@@ -18,6 +19,8 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        ConfigReader.loadProperties();
+
 		driver.get("https://automationexercise.com/login");
 	    System.out.println("Driver Initialized: " + driver); // 👈 Add this line
 
