@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T13:15:04 IST" name="Default suite" finished-at="2025-07-29T13:15:25 IST" duration-ms="21342">
+  <suite started-at="2025-07-31T21:45:01 IST" name="AutomationSuite" finished-at="2025-07-31T21:45:26 IST" duration-ms="24924">
     <groups>
     </groups>
-    <test started-at="2025-07-29T13:15:04 IST" name="Default test" finished-at="2025-07-29T13:15:25 IST" duration-ms="21342">
+    <test started-at="2025-07-31T21:45:01 IST" name="SeleniumTests" finished-at="2025-07-31T21:45:16 IST" duration-ms="14758">
       <class name="tests.ProductsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T13:15:04 IST" name="setUp" finished-at="2025-07-29T13:15:11 IST" duration-ms="6833" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-31T21:45:01 IST" name="setUp" finished-at="2025-07-31T21:45:07 IST" duration-ms="5260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickProductsTest()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T13:15:11 IST" name="clickProductsTest" description="Navigate to url add product verify and checkout" finished-at="2025-07-29T13:15:25 IST" duration-ms="13962" status="PASS">
+        <test-method signature="clickProductsTest()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-31T21:45:07 IST" name="clickProductsTest" description="Navigate to url add product verify and checkout" finished-at="2025-07-31T21:45:16 IST" duration-ms="8896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickProductsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-29T13:15:25 IST" name="tearDown" finished-at="2025-07-29T13:15:25 IST" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTest@47caedad]" started-at="2025-07-31T21:45:16 IST" name="tearDown" finished-at="2025-07-31T21:45:16 IST" duration-ms="461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProductsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- SeleniumTests -->
+    <test started-at="2025-07-31T21:45:16 IST" name="ProductSearchTest" finished-at="2025-07-31T21:45:26 IST" duration-ms="10125">
+      <class name="tests.ProductSearch">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductSearch@2bdd8394]" started-at="2025-07-31T21:45:16 IST" name="setUp" finished-at="2025-07-31T21:45:20 IST" duration-ms="3369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ProductSearchTest()[pri:0, instance:tests.ProductSearch@2bdd8394]" started-at="2025-07-31T21:45:20 IST" name="ProductSearchTest" finished-at="2025-07-31T21:45:26 IST" duration-ms="6502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSearchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductSearch@2bdd8394]" started-at="2025-07-31T21:45:26 IST" name="tearDown" finished-at="2025-07-31T21:45:26 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductSearch -->
+    </test> <!-- ProductSearchTest -->
+  </suite> <!-- AutomationSuite -->
 </testng-results>
