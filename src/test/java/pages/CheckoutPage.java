@@ -24,6 +24,8 @@ public class CheckoutPage {
 
 	By CheckOutLink=By.xpath("//a[text()='Proceed To Checkout']");
 	
+	By placeOrderLink=By.xpath("//a[text()='Place Order']");
+	
 	@Step("click on proceed to checkout button")
 
 	public void ClickCheckout()
@@ -31,6 +33,15 @@ public class CheckoutPage {
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(CheckOutLink));
 
 		driver.findElement(CheckOutLink).click();
+	}
+	
+	@Step("click on place order")
+
+	public void ClickPlaceOrder()
+	{
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(placeOrderLink));
+
+		driver.findElement(placeOrderLink).click();
 	}
 	
 }
