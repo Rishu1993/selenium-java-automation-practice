@@ -79,6 +79,7 @@ If a test fails, the framework automatically:
 
 ## 📊 Test Report (Allure)
 Below is a sample Allure report generated after running the tests:
+
 selenium-java-automation-practice\screenshots
 
 
