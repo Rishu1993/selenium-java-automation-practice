@@ -30,12 +30,14 @@ WebDriverWait wait;
 	By verifcation=By.xpath("//p[text()='Your product has been added to cart.']");
 	By viewCart=By.xpath("//u[text()='View Cart']/parent::a");
 	
+	@Step("click Product Link")
 	public void clickProductLink()
 	{
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(productsLink));
 		driver.findElement(productsLink).click();
 	}
 
+	@Step(" return lists of products")
 	public List<WebElement> allProds()
 	{
 		List<WebElement> listOfProd=driver.findElements(listOfProds);

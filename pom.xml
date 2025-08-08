@@ -51,6 +51,11 @@
     <artifactId>allure-java-commons</artifactId>
     <version>2.24.0</version>
 </dependency>
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.9.19</version>
+</dependency>
 
   </dependencies>
 
@@ -58,27 +63,19 @@
     <plugins>
       <!-- Surefire Plugin for running TestNG + Allure -->
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M9</version>
-        <configuration>
-          <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
-          <systemPropertyVariables>
-            <allure.results.directory>allure-results</allure.results.directory>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
-      
-      <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.3.0</version>
-      <configuration>
-        <suiteXmlFiles>
-          <suiteXmlFile>testng.xml</suiteXmlFile>
-        </suiteXmlFiles>
-      </configuration>
-    </plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-plugin</artifactId>
+  <version>3.0.0-M9</version> <!-- Or 3.1.2 (latest stable) -->
+  <configuration>
+    <suiteXmlFiles>
+      <suiteXmlFile>testng.xml</suiteXmlFile>
+    </suiteXmlFiles>
+    <systemPropertyVariables>
+      <allure.results.directory>allure-results</allure.results.directory>
+    </systemPropertyVariables>
+    <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+  </configuration>
+</plugin>
 
       <!-- Allure Maven Plugin -->
       <plugin>
@@ -87,6 +84,15 @@
         <version>2.11.2</version>
       </plugin>
       
+      
+      <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.1.2</version>
+    <configuration>
+        <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar"</argLine>
+    </configuration>
+</plugin>
       <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-clean-plugin</artifactId>

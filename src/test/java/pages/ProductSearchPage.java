@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
+
 public class ProductSearchPage {
 	
 	
@@ -26,19 +28,21 @@ WebDriverWait wait;
 	By clickSearchBtn=By.id("submit_search");
 	By productList=By.xpath("//div[@class='productinfo text-center']//p");
 	
-	
+	@Step("enterProd")
 	public void enterProd(String prod)
 	{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(producSearch));
 		driver.findElement(producSearch).sendKeys(prod);
 	}
 	
+	@Step("clickSearchBtn")
 	public void clickSearchBtn()
 	{
 	
 		driver.findElement(clickSearchBtn).click();
 	}
 	
+	@Step("listsOfProducts")
 	public List<WebElement> listsOfProducts()
 	{
 	

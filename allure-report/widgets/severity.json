@@ -1,1 +1,1 @@
-[{"uid":"939b6f7e3a962b67","name":"Navigate to url add product verify and checkout","time":{"start":1753772853675,"stop":1753772878220,"duration":24545},"status":"passed","severity":"normal"}]
+[{"uid":"3c38e829e729a3e3","name":"Verify product search returns expected results","time":{"start":1754587330975,"stop":1754587363680,"duration":32705},"status":"passed","severity":"critical"},{"uid":"bb630055a887ba9","name":"Navigate to url add product verify and checkout","time":{"start":1754587330238,"stop":1754587342189,"duration":11951},"status":"passed","severity":"normal"}]
