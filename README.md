@@ -4,7 +4,7 @@
 This is a Selenium Java Test Automation Framework built for UI test automation.  
 It follows the **Page Object Model (POM)** design pattern and is integrated with **TestNG**, **Maven**, and **Allure Reports** for easy test management and reporting.
 
----
+
 
 ## 🛠 Tech Stack
 - **Java** – Programming language
@@ -26,9 +26,10 @@ src
 │ ├── pages # Page Object Model classes
 │ ├── utils # Utilities (Screenshot, RetryAnalyzer, Listeners,Property file configuration)
 │ ├── tests # Test classes
-testng.xml # TestNG configuration
-pom.xml # Maven dependencies
-README.md # Project documentation
+**testng.xml # TestNG configuration**
+**pom.xml # Maven dependencies**
+**README.md # Project documentation**
+
 
 ## ⚙️ Setup Instructions
 1. **Clone the repository**  
@@ -41,7 +42,7 @@ README.md # Project documentation
 >>mvn clean install
 
 
-▶ ##** How to Run Tests**
+▶** ##** How to Run Tests****
 
 **Run all tests**
 mvn clean test
