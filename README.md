@@ -40,7 +40,7 @@ README.md # Project documentation
 >>mvn clean install
 
 
-▶ How to Run Tests
+▶ ##** How to Run Tests**
 
 Run all tests
 mvn clean test
@@ -53,7 +53,7 @@ mvn clean test -DsuiteXmlFile=testng.xml
 
 
 
-Reporting:
+## Reporting:
 Allure Reports
 Run the tests.
 
@@ -63,7 +63,7 @@ allure serve allure-results
 A local server will open in the browser with a detailed report.
 
 
-📸 Screenshots on Failure
+📸 **Screenshots on Failure**
 If a test fails, the framework automatically:
 
 Takes a screenshot
