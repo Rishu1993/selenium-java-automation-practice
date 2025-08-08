@@ -57,9 +57,15 @@ mvn clean test -DsuiteXmlFile=testng.xml
 📊** Reporting: Allure Reports**
 
 1.Run the tests.
+
 2.Generate report:
+
 allure serve allure-results
+
 3.A local server will open in the browser with a detailed report.
+
+
+
 
 
 📸 **Screenshots on Failure**
