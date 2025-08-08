@@ -8,18 +8,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import io.qameta.allure.Attachment;
+
 public class ScreenShot {
 
-	
-	public String takeScreenshot(WebDriver driver,String testName) {
-	    TakesScreenshot ts = (TakesScreenshot) driver;
-	    File src = ts.getScreenshotAs(OutputType.FILE);
-	    String dest = "./screenshots/" + testName + "_" + System.currentTimeMillis() + ".png";
-	    try {
-	        FileUtils.copyFile(src, new File(dest));
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
-	    return dest;
-	}
+    @Attachment(value = "Screenshot", type = "image/png")
+    public static byte[] takeScreenshot(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
 }

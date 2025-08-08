@@ -2,6 +2,7 @@
 <suite name="AutomationSuite" parallel="tests" thread-count="2">
 	<listeners>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    <listener class-name="utils.TestListener" />
 </listeners>
   <test name="SeleniumTests">
 	    	    <classes>
