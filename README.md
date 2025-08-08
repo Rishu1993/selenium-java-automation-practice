@@ -14,6 +14,7 @@ It follows the **Page Object Model (POM)** design pattern and is integrated with
 - **Allure Reports** – Test reporting
 - **WebDriverManager** – Automatic driver management
 - **Page Object Model (POM)** – Maintainable test structure
+- **Retry Mechanism** -Retries to run testcases twice if failed once
 
 ---
 
@@ -34,42 +35,44 @@ README.md # Project documentation
    ```bash
    git clone https://github.com/Rishu1993/selenium-java-automation-practice.git
    
-2.Open in Eclipse or IntelliJ
+**2.Open in Eclipse or IntelliJ**
 
-3.Install Maven dependencies
+**3.Install Maven dependencies**
 >>mvn clean install
 
 
 ▶ ##** How to Run Tests**
 
-Run all tests
+**Run all tests**
 mvn clean test
 
-Run specific group
+**Run specific group**
 mvn clean test -DsuiteXmlFile=testng.xml -Dgroups=Smoke
 
-Run specific TestNG suite
+**Run specific TestNG suite**
 mvn clean test -DsuiteXmlFile=testng.xml
 
 
 
-## Reporting:
-Allure Reports
-Run the tests.
+📊** Reporting: Allure Reports**
 
-Generate report:
+1.Run the tests.
+
+2.Generate report:
 allure serve allure-results
 
-A local server will open in the browser with a detailed report.
+3.A local server will open in the browser with a detailed report.
 
 
 📸 **Screenshots on Failure**
 If a test fails, the framework automatically:
 
-Takes a screenshot
+1.Takes a screenshot
+2.Attaches it to Allure reports
 
-Attaches it to Allure reports
-
+## 📊 Test Report (Allure)
+Below is a sample Allure report generated after running the tests:
+selenium-java-automation-practice\screenshots
 
 📌 Author
 Rishu Bajaj
