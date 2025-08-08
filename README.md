@@ -57,10 +57,8 @@ mvn clean test -DsuiteXmlFile=testng.xml
 📊** Reporting: Allure Reports**
 
 1.Run the tests.
-
 2.Generate report:
 allure serve allure-results
-
 3.A local server will open in the browser with a detailed report.
 
 
@@ -70,9 +68,15 @@ If a test fails, the framework automatically:
 1.Takes a screenshot
 2.Attaches it to Allure reports
 
+
+
 ## 📊 Test Report (Allure)
 Below is a sample Allure report generated after running the tests:
 selenium-java-automation-practice\screenshots
+
+
+
+
 
 📌 Author
 Rishu Bajaj
