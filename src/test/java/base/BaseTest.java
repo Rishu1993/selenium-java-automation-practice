@@ -14,7 +14,7 @@ public class BaseTest {
 	protected WebDriver driver;
 	
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
     	System.out.println("🔧 BeforeMethod running...");
 
@@ -23,13 +23,13 @@ public class BaseTest {
         driver.manage().window().maximize();
         ConfigReader.loadProperties();
 
-		driver.get("https://automationexercise.com/login");
+		//driver.get("https://automationexercise.com/login");
 	    System.out.println("Driver Initialized: " + driver); // 👈 Add this line
 
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
             driver.quit();

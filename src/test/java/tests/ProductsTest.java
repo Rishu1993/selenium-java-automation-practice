@@ -39,7 +39,8 @@ public class ProductsTest extends BaseTest {
 		Logger logger = Logger.getLogger(ProductsTest.class.getName());
 		String email = ConfigReader.get("userEmail");
 		String password = ConfigReader.get("userPassword");
-
+		String url=ConfigReader.get("url");
+		driver.get(url);
 		login.enterEmail(email);
 		login.enterPassword(password);
 		login.clickLogin();

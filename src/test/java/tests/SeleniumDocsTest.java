@@ -15,7 +15,7 @@ import pages.SeleniumDocsPage;
 @Feature("Documentation Page")
 public class SeleniumDocsTest extends BaseTest {
 	
-	@Test(description = "Verify title of Selenium documentation page")
+	@Test(description = "Verify title of Selenium documentation page",groups = {"Smoke"})
     @Severity(SeverityLevel.NORMAL)
     @Description("Navigate to Selenium.dev and verify the documentation page title")
 	public void runSeleniumDocsTest()
